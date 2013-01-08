@@ -1,0 +1,349 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		37848A9D169CAEC50035F1C4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37848A9C169CAEC50035F1C4 /* UIKit.framework */; };
+		37848A9F169CAEC50035F1C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37848A9E169CAEC50035F1C4 /* Foundation.framework */; };
+		37848AA1169CAEC50035F1C4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37848AA0169CAEC50035F1C4 /* CoreGraphics.framework */; };
+		37848AA7169CAEC50035F1C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 37848AA5169CAEC50035F1C4 /* InfoPlist.strings */; };
+		37848AA9169CAEC50035F1C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37848AA8169CAEC50035F1C4 /* main.m */; };
+		37848AAD169CAEC50035F1C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37848AAC169CAEC50035F1C4 /* AppDelegate.m */; };
+		37848AAF169CAEC50035F1C4 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 37848AAE169CAEC50035F1C4 /* Default.png */; };
+		37848AB1169CAEC50035F1C4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37848AB0169CAEC50035F1C4 /* Default@2x.png */; };
+		37848AB3169CAEC50035F1C4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37848AB2169CAEC50035F1C4 /* Default-568h@2x.png */; };
+		37848AB6169CAEC50035F1C4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37848AB5169CAEC50035F1C4 /* ViewController.m */; };
+		37848AB9169CAEC50035F1C4 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37848AB7169CAEC50035F1C4 /* ViewController.xib */; };
+		37F8FCFA169CAF1D00D48ADE /* Mask@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F8FCF7169CAF1D00D48ADE /* Mask@2x.png */; };
+		37F8FCFB169CAF1D00D48ADE /* SpinButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F8FCF8169CAF1D00D48ADE /* SpinButton@2x.png */; };
+		37F8FCFC169CAF1D00D48ADE /* Wheel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F8FCF9169CAF1D00D48ADE /* Wheel@2x.png */; };
+		37F8FCFE169CB0BA00D48ADE /* soundtrack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 37F8FCFD169CB0BA00D48ADE /* soundtrack.mp3 */; };
+		37F8FD01169CB17500D48ADE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F8FD00169CB17500D48ADE /* AVFoundation.framework */; };
+		37F8FD03169CB4BA00D48ADE /* QuestionBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F8FD02169CB4BA00D48ADE /* QuestionBG@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		37848A98169CAEC50035F1C4 /* HobbitTrivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HobbitTrivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		37848A9C169CAEC50035F1C4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		37848A9E169CAEC50035F1C4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		37848AA0169CAEC50035F1C4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		37848AA4169CAEC50035F1C4 /* HobbitTrivia-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HobbitTrivia-Info.plist"; sourceTree = "<group>"; };
+		37848AA6169CAEC50035F1C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		37848AA8169CAEC50035F1C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		37848AAA169CAEC50035F1C4 /* HobbitTrivia-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HobbitTrivia-Prefix.pch"; sourceTree = "<group>"; };
+		37848AAB169CAEC50035F1C4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		37848AAC169CAEC50035F1C4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		37848AAE169CAEC50035F1C4 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		37848AB0169CAEC50035F1C4 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		37848AB2169CAEC50035F1C4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		37848AB4169CAEC50035F1C4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		37848AB5169CAEC50035F1C4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		37848AB8169CAEC50035F1C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		37F8FCF7169CAF1D00D48ADE /* Mask@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mask@2x.png"; sourceTree = "<group>"; };
+		37F8FCF8169CAF1D00D48ADE /* SpinButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SpinButton@2x.png"; sourceTree = "<group>"; };
+		37F8FCF9169CAF1D00D48ADE /* Wheel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wheel@2x.png"; sourceTree = "<group>"; };
+		37F8FCFD169CB0BA00D48ADE /* soundtrack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soundtrack.mp3; sourceTree = "<group>"; };
+		37F8FD00169CB17500D48ADE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		37F8FD02169CB4BA00D48ADE /* QuestionBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "QuestionBG@2x.png"; path = "../../../Desktop/QuestionBG@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		37848A95169CAEC50035F1C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37F8FD01169CB17500D48ADE /* AVFoundation.framework in Frameworks */,
+				37848A9D169CAEC50035F1C4 /* UIKit.framework in Frameworks */,
+				37848A9F169CAEC50035F1C4 /* Foundation.framework in Frameworks */,
+				37848AA1169CAEC50035F1C4 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		37848A8D169CAEC50035F1C4 = {
+			isa = PBXGroup;
+			children = (
+				37F8FD00169CB17500D48ADE /* AVFoundation.framework */,
+				37848AA2169CAEC50035F1C4 /* HobbitTrivia */,
+				37848A9B169CAEC50035F1C4 /* Frameworks */,
+				37848A99169CAEC50035F1C4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		37848A99169CAEC50035F1C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				37848A98169CAEC50035F1C4 /* HobbitTrivia.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		37848A9B169CAEC50035F1C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37848A9C169CAEC50035F1C4 /* UIKit.framework */,
+				37848A9E169CAEC50035F1C4 /* Foundation.framework */,
+				37848AA0169CAEC50035F1C4 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		37848AA2169CAEC50035F1C4 /* HobbitTrivia */ = {
+			isa = PBXGroup;
+			children = (
+				37F8FCF4169CAF0800D48ADE /* Resources */,
+				37848AAB169CAEC50035F1C4 /* AppDelegate.h */,
+				37848AAC169CAEC50035F1C4 /* AppDelegate.m */,
+				37848AB4169CAEC50035F1C4 /* ViewController.h */,
+				37848AB5169CAEC50035F1C4 /* ViewController.m */,
+				37848AB7169CAEC50035F1C4 /* ViewController.xib */,
+				37848AA3169CAEC50035F1C4 /* Supporting Files */,
+			);
+			path = HobbitTrivia;
+			sourceTree = "<group>";
+		};
+		37848AA3169CAEC50035F1C4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				37848AA4169CAEC50035F1C4 /* HobbitTrivia-Info.plist */,
+				37848AA5169CAEC50035F1C4 /* InfoPlist.strings */,
+				37848AA8169CAEC50035F1C4 /* main.m */,
+				37848AAA169CAEC50035F1C4 /* HobbitTrivia-Prefix.pch */,
+				37848AAE169CAEC50035F1C4 /* Default.png */,
+				37848AB0169CAEC50035F1C4 /* Default@2x.png */,
+				37848AB2169CAEC50035F1C4 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		37F8FCF4169CAF0800D48ADE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				37F8FCFF169CB0BF00D48ADE /* Music */,
+				37F8FCF6169CAF0E00D48ADE /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		37F8FCF6169CAF0E00D48ADE /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				37F8FCF7169CAF1D00D48ADE /* Mask@2x.png */,
+				37F8FD02169CB4BA00D48ADE /* QuestionBG@2x.png */,
+				37F8FCF8169CAF1D00D48ADE /* SpinButton@2x.png */,
+				37F8FCF9169CAF1D00D48ADE /* Wheel@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		37F8FCFF169CB0BF00D48ADE /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				37F8FCFD169CB0BA00D48ADE /* soundtrack.mp3 */,
+			);
+			name = Music;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		37848A97169CAEC50035F1C4 /* HobbitTrivia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37848ABC169CAEC50035F1C4 /* Build configuration list for PBXNativeTarget "HobbitTrivia" */;
+			buildPhases = (
+				37848A94169CAEC50035F1C4 /* Sources */,
+				37848A95169CAEC50035F1C4 /* Frameworks */,
+				37848A96169CAEC50035F1C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HobbitTrivia;
+			productName = HobbitTrivia;
+			productReference = 37848A98169CAEC50035F1C4 /* HobbitTrivia.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		37848A8F169CAEC50035F1C4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Braxio Interactive";
+			};
+			buildConfigurationList = 37848A92169CAEC50035F1C4 /* Build configuration list for PBXProject "HobbitTrivia" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 37848A8D169CAEC50035F1C4;
+			productRefGroup = 37848A99169CAEC50035F1C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				37848A97169CAEC50035F1C4 /* HobbitTrivia */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		37848A96169CAEC50035F1C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37848AA7169CAEC50035F1C4 /* InfoPlist.strings in Resources */,
+				37848AAF169CAEC50035F1C4 /* Default.png in Resources */,
+				37848AB1169CAEC50035F1C4 /* Default@2x.png in Resources */,
+				37848AB3169CAEC50035F1C4 /* Default-568h@2x.png in Resources */,
+				37848AB9169CAEC50035F1C4 /* ViewController.xib in Resources */,
+				37F8FCFA169CAF1D00D48ADE /* Mask@2x.png in Resources */,
+				37F8FCFB169CAF1D00D48ADE /* SpinButton@2x.png in Resources */,
+				37F8FCFC169CAF1D00D48ADE /* Wheel@2x.png in Resources */,
+				37F8FCFE169CB0BA00D48ADE /* soundtrack.mp3 in Resources */,
+				37F8FD03169CB4BA00D48ADE /* QuestionBG@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		37848A94169CAEC50035F1C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37848AA9169CAEC50035F1C4 /* main.m in Sources */,
+				37848AAD169CAEC50035F1C4 /* AppDelegate.m in Sources */,
+				37848AB6169CAEC50035F1C4 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		37848AA5169CAEC50035F1C4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37848AA6169CAEC50035F1C4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		37848AB7169CAEC50035F1C4 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37848AB8169CAEC50035F1C4 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		37848ABA169CAEC50035F1C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		37848ABB169CAEC50035F1C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		37848ABD169CAEC50035F1C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HobbitTrivia/HobbitTrivia-Prefix.pch";
+				INFOPLIST_FILE = "HobbitTrivia/HobbitTrivia-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		37848ABE169CAEC50035F1C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HobbitTrivia/HobbitTrivia-Prefix.pch";
+				INFOPLIST_FILE = "HobbitTrivia/HobbitTrivia-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		37848A92169CAEC50035F1C4 /* Build configuration list for PBXProject "HobbitTrivia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37848ABA169CAEC50035F1C4 /* Debug */,
+				37848ABB169CAEC50035F1C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37848ABC169CAEC50035F1C4 /* Build configuration list for PBXNativeTarget "HobbitTrivia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37848ABD169CAEC50035F1C4 /* Debug */,
+				37848ABE169CAEC50035F1C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 37848A8F169CAEC50035F1C4 /* Project object */;
+}
