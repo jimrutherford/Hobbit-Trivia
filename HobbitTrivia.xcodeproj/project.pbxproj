@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		375DB915169F2DB800AE240F /* QuestionBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 375DB914169F2DB800AE240F /* QuestionBG@2x.png */; };
 		37848A9D169CAEC50035F1C4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37848A9C169CAEC50035F1C4 /* UIKit.framework */; };
 		37848A9F169CAEC50035F1C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37848A9E169CAEC50035F1C4 /* Foundation.framework */; };
 		37848AA1169CAEC50035F1C4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37848AA0169CAEC50035F1C4 /* CoreGraphics.framework */; };
@@ -20,13 +21,17 @@
 		37848AB9169CAEC50035F1C4 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37848AB7169CAEC50035F1C4 /* ViewController.xib */; };
 		37F8FCFA169CAF1D00D48ADE /* Mask@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F8FCF7169CAF1D00D48ADE /* Mask@2x.png */; };
 		37F8FCFB169CAF1D00D48ADE /* SpinButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F8FCF8169CAF1D00D48ADE /* SpinButton@2x.png */; };
-		37F8FCFC169CAF1D00D48ADE /* Wheel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F8FCF9169CAF1D00D48ADE /* Wheel@2x.png */; };
 		37F8FCFE169CB0BA00D48ADE /* soundtrack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 37F8FCFD169CB0BA00D48ADE /* soundtrack.mp3 */; };
 		37F8FD01169CB17500D48ADE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F8FD00169CB17500D48ADE /* AVFoundation.framework */; };
-		37F8FD03169CB4BA00D48ADE /* QuestionBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F8FD02169CB4BA00D48ADE /* QuestionBG@2x.png */; };
+		37F8FD05169CCB5000D48ADE /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F8FD04169CCB5000D48ADE /* Icon-72.png */; };
+		37F8FD07169CCB5500D48ADE /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F8FD06169CCB5500D48ADE /* Icon-72@2x.png */; };
+		37F8FD09169CCFD000D48ADE /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F8FD08169CCFD000D48ADE /* Default-Landscape~ipad.png */; };
+		37F8FD0B169CCFD500D48ADE /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F8FD0A169CCFD500D48ADE /* Default-Landscape@2x~ipad.png */; };
+		37F8FD0D169CF17E00D48ADE /* Wheel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F8FD0C169CF17E00D48ADE /* Wheel@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		375DB914169F2DB800AE240F /* QuestionBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QuestionBG@2x.png"; sourceTree = "<group>"; };
 		37848A98169CAEC50035F1C4 /* HobbitTrivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HobbitTrivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37848A9C169CAEC50035F1C4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		37848A9E169CAEC50035F1C4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -45,10 +50,13 @@
 		37848AB8169CAEC50035F1C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		37F8FCF7169CAF1D00D48ADE /* Mask@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mask@2x.png"; sourceTree = "<group>"; };
 		37F8FCF8169CAF1D00D48ADE /* SpinButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SpinButton@2x.png"; sourceTree = "<group>"; };
-		37F8FCF9169CAF1D00D48ADE /* Wheel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wheel@2x.png"; sourceTree = "<group>"; };
 		37F8FCFD169CB0BA00D48ADE /* soundtrack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soundtrack.mp3; sourceTree = "<group>"; };
 		37F8FD00169CB17500D48ADE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		37F8FD02169CB4BA00D48ADE /* QuestionBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "QuestionBG@2x.png"; path = "../../../Desktop/QuestionBG@2x.png"; sourceTree = "<group>"; };
+		37F8FD04169CCB5000D48ADE /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		37F8FD06169CCB5500D48ADE /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		37F8FD08169CCFD000D48ADE /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		37F8FD0A169CCFD500D48ADE /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
+		37F8FD0C169CF17E00D48ADE /* Wheel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wheel@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +77,10 @@
 		37848A8D169CAEC50035F1C4 = {
 			isa = PBXGroup;
 			children = (
+				37F8FD0A169CCFD500D48ADE /* Default-Landscape@2x~ipad.png */,
+				37F8FD08169CCFD000D48ADE /* Default-Landscape~ipad.png */,
+				37F8FD06169CCB5500D48ADE /* Icon-72@2x.png */,
+				37F8FD04169CCB5000D48ADE /* Icon-72.png */,
 				37F8FD00169CB17500D48ADE /* AVFoundation.framework */,
 				37848AA2169CAEC50035F1C4 /* HobbitTrivia */,
 				37848A9B169CAEC50035F1C4 /* Frameworks */,
@@ -134,10 +146,10 @@
 		37F8FCF6169CAF0E00D48ADE /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				375DB914169F2DB800AE240F /* QuestionBG@2x.png */,
 				37F8FCF7169CAF1D00D48ADE /* Mask@2x.png */,
-				37F8FD02169CB4BA00D48ADE /* QuestionBG@2x.png */,
 				37F8FCF8169CAF1D00D48ADE /* SpinButton@2x.png */,
-				37F8FCF9169CAF1D00D48ADE /* Wheel@2x.png */,
+				37F8FD0C169CF17E00D48ADE /* Wheel@2x.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -208,9 +220,13 @@
 				37848AB9169CAEC50035F1C4 /* ViewController.xib in Resources */,
 				37F8FCFA169CAF1D00D48ADE /* Mask@2x.png in Resources */,
 				37F8FCFB169CAF1D00D48ADE /* SpinButton@2x.png in Resources */,
-				37F8FCFC169CAF1D00D48ADE /* Wheel@2x.png in Resources */,
 				37F8FCFE169CB0BA00D48ADE /* soundtrack.mp3 in Resources */,
-				37F8FD03169CB4BA00D48ADE /* QuestionBG@2x.png in Resources */,
+				37F8FD05169CCB5000D48ADE /* Icon-72.png in Resources */,
+				37F8FD07169CCB5500D48ADE /* Icon-72@2x.png in Resources */,
+				37F8FD09169CCFD000D48ADE /* Default-Landscape~ipad.png in Resources */,
+				37F8FD0B169CCFD500D48ADE /* Default-Landscape@2x~ipad.png in Resources */,
+				37F8FD0D169CF17E00D48ADE /* Wheel@2x.png in Resources */,
+				375DB915169F2DB800AE240F /* QuestionBG@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
