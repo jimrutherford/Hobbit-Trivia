@@ -39,17 +39,11 @@ int correctChoice;
 {
     [super viewDidLoad];
 	
-	
-	//[self playSoundtrack];
-	
-	
+	[self playSoundtrack];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
+#pragma mark - Button Handlers
 
 - (IBAction)SpinButtonTouch:(id)sender
 {
@@ -59,20 +53,20 @@ int correctChoice;
 	
 }
 
+
 - (IBAction)SpinButtonTouchDown:(id)sender
 {
 	
 	angleIncrement = 6;
 	isSlowing = NO;
 	wheelTimer = [NSTimer scheduledTimerWithTimeInterval:0.03 target:self selector:@selector(move:) userInfo:nil repeats:YES];
-	
 }
 
 - (IBAction)doneButtonTouched:(id)sender {
 	[self hideQuestion];
 }
 
-
+#pragma mark - Animations
 
 - (void)move:(id)timer {
 
@@ -86,9 +80,6 @@ int correctChoice;
 	{
 		totalAngle = totalAngle - 360;
 	}
-	
-	NSLog(@"Angle - %f, Total Angle - %f", angle, totalAngle);
-
 
 	if (angleIncrement < 1)
 	{
@@ -106,11 +97,9 @@ int correctChoice;
 		
 		wheelTimer = [NSTimer scheduledTimerWithTimeInterval:interval target:self selector:@selector(move:) userInfo:nil repeats:YES];
 	}
-	
-
-	
 }
 
+#pragma mark - Questions and Answers
 
 - (void) showQuestion
 {
@@ -276,7 +265,6 @@ int correctChoice;
 		
 }
 
-
 - (void) hideQuestion
 {
 	[UIView animateWithDuration:0.25 animations:^{
@@ -292,6 +280,8 @@ int correctChoice;
 	
 }
 
+#pragma mark - Audio Handling
+
 - (void) playSoundtrack
 {
 	NSString * musicSonati = [[NSBundle mainBundle] pathForResource:@"soundtrack" ofType:@"mp3"];
@@ -300,5 +290,12 @@ int correctChoice;
 	[myMusic play];
 }
 
+#pragma mark - Cleanup
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
 
 @end
