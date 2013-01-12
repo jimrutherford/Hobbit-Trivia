@@ -25,6 +25,10 @@
 @implementation ViewController
 
 AVAudioPlayer * myMusic;
+AVAudioPlayer * wheelClickSound;
+AVAudioPlayer * wrongAnswerSound;
+AVAudioPlayer * correctAnswerSound;
+
 bool isSlowing = NO;
 bool didMakeChoice = NO;
 
@@ -40,6 +44,19 @@ int correctChoice;
     [super viewDidLoad];
 	
 	[self playSoundtrack];
+	
+	
+	NSString * wheelClickSoundPath = [[NSBundle mainBundle] pathForResource:@"WheelClick" ofType:@"mp3"];
+	wheelClickSound = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:wheelClickSoundPath] error:NULL];
+	wheelClickSound.numberOfLoops = 0;
+	
+	NSString * correctAnswerSoundPath = [[NSBundle mainBundle] pathForResource:@"CorrectAnswerSound" ofType:@"mp3"];
+	correctAnswerSound = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:correctAnswerSoundPath] error:NULL];
+	correctAnswerSound.numberOfLoops = 0;
+	
+	NSString * wrongAnswerSoundPath = [[NSBundle mainBundle] pathForResource:@"WrongAnswerSound" ofType:@"mp3"];
+	wrongAnswerSound = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:wrongAnswerSoundPath] error:NULL];
+	wrongAnswerSound.numberOfLoops = 0;
 }
 
 
@@ -69,8 +86,9 @@ int correctChoice;
 #pragma mark - Animations
 
 - (void)move:(id)timer {
+	
 	self.WheelImage.transform = CGAffineTransformMakeRotation(DEGREES_TO_RADIANS(angle));
-    
+    [wheelClickSound play];
 	angle += angleIncrement;
 
 	// we never need our angle to be larger than 360 - adjust it
@@ -109,101 +127,101 @@ int correctChoice;
 	if (angle > 0.0f && angle < 36.0f)
 	{
 		question = @"What is another name for the Heart of the Mountain?";
-		answer1 = @"Answer_1";
-		answer2 = @"Answer_2";
-		answer3 = @"Answer_3";
-		answer4 = @"Answer_4";
-		correctChoice = 1;
+		answer1 = @"The Diamond Stone";
+		answer2 = @"The Lost Ark";
+		answer3 = @"The Arkenstone";
+		answer4 = @"The Breathstone";
+		correctChoice = 3;
 	}
 	
 	if (angle > 36.0f && angle < 72.0f)
 	{
 		question = @"What is the name of the Brown Wizard?";
-		answer1 = @"Answer_1";
-		answer2 = @"Answer_2";
-		answer3 = @"Answer_3";
-		answer4 = @"Answer_4";
-		correctChoice = 1;
+		answer1 = @"Hehasgass";
+		answer2 = @"Radagast";
+		answer3 = @"The Necromancer";
+		answer4 = @"Henry";
+		correctChoice = 2;
 	}
 	
 	if (angle > 72.0f && angle < 108.0f)
 	{
-		question = @"Sauron";
-		answer1 = @"Answer_1";
-		answer2 = @"Answer_2";
-		answer3 = @"Answer_3";
-		answer4 = @"Answer_4";
+		question = @"Where is Sauron's home?";
+		answer1 = @"Mordor";
+		answer2 = @"The Shire";
+		answer3 = @"The Mines of Moria";
+		answer4 = @"Gondolin";
 		correctChoice = 1;
 	}
 	
 	if (angle > 108.0f && angle < 144.0f)
 	{
 		question = @"Who made the Ring to Rule them All?";
-		answer1 = @"Answer_1";
-		answer2 = @"Answer_2";
-		answer3 = @"Answer_3";
-		answer4 = @"Answer_4";
-		correctChoice = 1;
+		answer1 = @"Bolg";
+		answer2 = @"Nori";
+		answer3 = @"Sarumon";
+		answer4 = @"Sauron";
+		correctChoice = 4;
 	}
 	
 	if (angle > 144.0f && angle < 180.0f)
 	{
-		question = @"What is the name of the Queen of the Elves?";
-		answer1 = @"Answer_1";
-		answer2 = @"Answer_2";
-		answer3 = @"Answer_3";
-		answer4 = @"Answer_4";
-		correctChoice = 1;
+		question = @"What did Gimli ask from the Queen of the Elves?";
+		answer1 = @"A magic axe";
+		answer2 = @"A lock of hair";
+		answer3 = @"Invincible chain mail";
+		answer4 = @"A kiss";
+		correctChoice = 2;
 	}
 	
 	if (angle > 180.0f && angle < 216.0f)
 	{
-		question = @"Thorin";
-		answer1 = @"Answer_1";
-		answer2 = @"Answer_2";
-		answer3 = @"Answer_3";
-		answer4 = @"Answer_4";
-		correctChoice = 1;
+		question = @"What does Thorin use as a shield?";
+		answer1 = @"His brother";
+		answer2 = @"His father's shield";
+		answer3 = @"A maple branch";
+		answer4 = @"An oak log";
+		correctChoice = 4;
 	}
 	
 	if (angle > 216.0f && angle < 252.0f)
 	{
-		question = @"Smaug";
-		answer1 = @"Answer_1";
-		answer2 = @"Answer_2";
-		answer3 = @"Answer_3";
-		answer4 = @"Answer_4";
-		correctChoice = 1;
+		question = @"What does Smaug use for his empty patch of skin?";
+		answer1 = @"Emeralds";
+		answer2 = @"Diamonds";
+		answer3 = @"Rubies";
+		answer4 = @"Under Armour";
+		correctChoice = 2;
 	}
 	
 	if (angle > 252.0f && angle < 288.0f)
 	{
 		question = @"What are the names of the swords...?";
-		answer1 = @"Answer_1";
-		answer2 = @"Answer_2";
-		answer3 = @"Answer_3";
-		answer4 = @"Answer_4";
-		correctChoice = 1;
+		answer1 = @"Feli, Kili and Bombur";
+		answer2 = @"Formenos, Calembel, Armenelos";
+		answer3 = @"Glamdring, Sting and Orchrist";
+		answer4 = @"Snap, Crackle and Pop";
+		correctChoice = 3;
 	}
 	
 	if (angle > 288.0f && angle < 324.0f)
 	{
 		question = @"What is Gollums real name?";
-		answer1 = @"Answer_1";
-		answer2 = @"Answer_2";
-		answer3 = @"Answer_3";
-		answer4 = @"Answer_4";
-		correctChoice = 1;
+		answer1 = @"Bob";
+		answer2 = @"Seredic Brandybuck";
+		answer3 = @"Saradoc";
+		answer4 = @"Smeagul";
+		correctChoice = 4;
 		
 	}
 	
 	if (angle > 324.0f && angle < 360.0f)
 	{
 		question = @"What is the name of the home of the Dwarves?";
-		answer1 = @"Answer_1";
-		answer2 = @"Answer_2";
-		answer3 = @"Answer_3";
-		answer4 = @"Answer_4";
+		answer1 = @"Erebor";
+		answer2 = @"The Misty Mountain";
+		answer3 = @"Arnor";
+		answer4 = @"Iron Hills";
 		correctChoice = 1;
 	}
 	
@@ -259,8 +277,10 @@ int correctChoice;
 			if (selectedAnswer == correctChoice)
 			{
 				[self.answerBG setImage:[UIImage imageNamed:@"CorrectAnswerBG"]];
+				[correctAnswerSound play];
 			} else {
 				[self.answerBG setImage:[UIImage imageNamed:@"WrongAnswerBG"]];
+				[wrongAnswerSound play];
 			}
 			
 			// lets animate the background in

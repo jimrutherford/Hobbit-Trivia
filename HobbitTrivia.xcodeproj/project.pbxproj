@@ -10,6 +10,9 @@
 		375DB915169F2DB800AE240F /* QuestionBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 375DB914169F2DB800AE240F /* QuestionBG@2x.png */; };
 		375DB91C16A0C41200AE240F /* CorrectAnswerBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 375DB91A16A0C41200AE240F /* CorrectAnswerBG@2x.png */; };
 		375DB91D16A0C41200AE240F /* WrongAnswerBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 375DB91B16A0C41200AE240F /* WrongAnswerBG@2x.png */; };
+		375DB92016A1EBB800AE240F /* WheelClick.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 375DB91F16A1EBB800AE240F /* WheelClick.mp3 */; };
+		375DB92316A1EFD000AE240F /* CorrectAnswerSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 375DB92116A1EFD000AE240F /* CorrectAnswerSound.mp3 */; };
+		375DB92416A1EFD000AE240F /* WrongAnswerSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 375DB92216A1EFD000AE240F /* WrongAnswerSound.mp3 */; };
 		37848A9D169CAEC50035F1C4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37848A9C169CAEC50035F1C4 /* UIKit.framework */; };
 		37848A9F169CAEC50035F1C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37848A9E169CAEC50035F1C4 /* Foundation.framework */; };
 		37848AA1169CAEC50035F1C4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37848AA0169CAEC50035F1C4 /* CoreGraphics.framework */; };
@@ -36,6 +39,9 @@
 		375DB914169F2DB800AE240F /* QuestionBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QuestionBG@2x.png"; sourceTree = "<group>"; };
 		375DB91A16A0C41200AE240F /* CorrectAnswerBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CorrectAnswerBG@2x.png"; sourceTree = "<group>"; };
 		375DB91B16A0C41200AE240F /* WrongAnswerBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WrongAnswerBG@2x.png"; sourceTree = "<group>"; };
+		375DB91F16A1EBB800AE240F /* WheelClick.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = WheelClick.mp3; sourceTree = "<group>"; };
+		375DB92116A1EFD000AE240F /* CorrectAnswerSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = CorrectAnswerSound.mp3; sourceTree = "<group>"; };
+		375DB92216A1EFD000AE240F /* WrongAnswerSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = WrongAnswerSound.mp3; sourceTree = "<group>"; };
 		37848A98169CAEC50035F1C4 /* HobbitTrivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HobbitTrivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37848A9C169CAEC50035F1C4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		37848A9E169CAEC50035F1C4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -141,7 +147,7 @@
 		37F8FCF4169CAF0800D48ADE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				37F8FCFF169CB0BF00D48ADE /* Music */,
+				37F8FCFF169CB0BF00D48ADE /* Audio */,
 				37F8FCF6169CAF0E00D48ADE /* Images */,
 			);
 			name = Resources;
@@ -160,12 +166,15 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
-		37F8FCFF169CB0BF00D48ADE /* Music */ = {
+		37F8FCFF169CB0BF00D48ADE /* Audio */ = {
 			isa = PBXGroup;
 			children = (
 				37F8FCFD169CB0BA00D48ADE /* soundtrack.mp3 */,
+				375DB91F16A1EBB800AE240F /* WheelClick.mp3 */,
+				375DB92116A1EFD000AE240F /* CorrectAnswerSound.mp3 */,
+				375DB92216A1EFD000AE240F /* WrongAnswerSound.mp3 */,
 			);
-			name = Music;
+			name = Audio;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +244,9 @@
 				375DB915169F2DB800AE240F /* QuestionBG@2x.png in Resources */,
 				375DB91C16A0C41200AE240F /* CorrectAnswerBG@2x.png in Resources */,
 				375DB91D16A0C41200AE240F /* WrongAnswerBG@2x.png in Resources */,
+				375DB92016A1EBB800AE240F /* WheelClick.mp3 in Resources */,
+				375DB92316A1EFD000AE240F /* CorrectAnswerSound.mp3 in Resources */,
+				375DB92416A1EFD000AE240F /* WrongAnswerSound.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
