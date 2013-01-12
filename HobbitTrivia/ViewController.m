@@ -251,12 +251,22 @@ int correctChoice;
 			didMakeChoice = YES;
 			int selectedAnswer = touch.view.tag - 100;
 			UILabel *label = (UILabel*)touch.view;
+			
+			CGRect answerFrame = CGRectMake(self.answerBG.frame.origin.x, label.frame.origin.y + 6, self.answerBG.frame.size.width, self.answerBG.frame.size.height);
+			
+			self.answerBG.frame = answerFrame;
+			
 			if (selectedAnswer == correctChoice)
 			{
-				[label setTextColor:[UIColor greenColor]];
+				[self.answerBG setImage:[UIImage imageNamed:@"CorrectAnswerBG"]];
 			} else {
-				[label setTextColor:[UIColor redColor]];
+				[self.answerBG setImage:[UIImage imageNamed:@"WrongAnswerBG"]];
 			}
+			
+			[UIView animateWithDuration:0.25 animations:^{
+				self.answerBG.alpha = 1;
+				label.textColor = [UIColor whiteColor];
+			}];
 			
 			// set timer to dismiss the question
 			[NSTimer scheduledTimerWithTimeInterval:5.0 target:self selector:@selector(hideQuestion) userInfo:nil repeats:NO];
@@ -277,6 +287,8 @@ int correctChoice;
     }];
 	
 	self.SpinButton.enabled = YES;
+	
+	[self.answerBG setAlpha:0.0f];
 	
 }
 

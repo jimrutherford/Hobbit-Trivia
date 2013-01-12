@@ -42,6 +42,7 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{161, 20}, {702, 700}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
+						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
@@ -56,6 +57,7 @@
 						<int key="NSvFlags">274</int>
 						<string key="NSFrameSize">{1024, 748}</string>
 						<reference key="NSSuperview" ref="766721923"/>
+						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="840328092"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
@@ -70,6 +72,7 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{20, 619}, {206, 113}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
+						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="133173164"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
@@ -111,6 +114,7 @@
 								<int key="NSvFlags">274</int>
 								<string key="NSFrameSize">{816, 570}</string>
 								<reference key="NSSuperview" ref="133173164"/>
+								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="126341209"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
@@ -120,12 +124,29 @@
 									<string key="NSResourceName">QuestionBG@2x.png</string>
 								</object>
 							</object>
+							<object class="IBUIImageView" id="376831697">
+								<reference key="NSNextResponder" ref="133173164"/>
+								<int key="NSvFlags">292</int>
+								<string key="NSFrame">{{32, 242}, {709, 50}}</string>
+								<reference key="NSSuperview" ref="133173164"/>
+								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView" ref="1068738117"/>
+								<string key="NSReuseIdentifierKey">_NS:9</string>
+								<float key="IBUIAlpha">0.0</float>
+								<bool key="IBUIUserInteractionEnabled">NO</bool>
+								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+								<object class="NSCustomResource" key="IBUIImage">
+									<string key="NSClassName">NSImage</string>
+									<string key="NSResourceName">CorrectAnswerBG@2x.png</string>
+								</object>
+							</object>
 							<object class="IBUILabel" id="126341209">
 								<reference key="NSNextResponder" ref="133173164"/>
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{41, 35}, {468, 180}}</string>
 								<reference key="NSSuperview" ref="133173164"/>
-								<reference key="NSNextKeyView" ref="1068738117"/>
+								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView" ref="376831697"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
@@ -155,6 +176,7 @@
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{41, 240}, {700, 69}}</string>
 								<reference key="NSSuperview" ref="133173164"/>
+								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="993056620"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
@@ -176,6 +198,7 @@
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{41, 307}, {700, 69}}</string>
 								<reference key="NSSuperview" ref="133173164"/>
+								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="70053673"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
@@ -197,6 +220,7 @@
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{41, 371}, {700, 69}}</string>
 								<reference key="NSSuperview" ref="133173164"/>
+								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="204177288"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
@@ -218,6 +242,7 @@
 								<int key="NSvFlags">292</int>
 								<string key="NSFrame">{{41, 438}, {700, 69}}</string>
 								<reference key="NSSuperview" ref="133173164"/>
+								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="308908772"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
@@ -237,6 +262,7 @@
 						</array>
 						<string key="NSFrame">{{104, 89}, {816, 570}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
+						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="333188923"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<object class="NSColor" key="IBUIBackgroundColor">
@@ -257,6 +283,7 @@
 				</array>
 				<string key="NSFrameSize">{1024, 748}</string>
 				<reference key="NSSuperview"/>
+				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="982093809"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">3</int>
@@ -347,6 +374,14 @@
 					<int key="connectionID">50</int>
 				</object>
 				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">answerBG</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="376831697"/>
+					</object>
+					<int key="connectionID">52</int>
+				</object>
+				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">SpinButtonTouch:</string>
 						<reference key="source" ref="840328092"/>
@@ -422,6 +457,7 @@
 							<reference ref="204177288"/>
 							<reference ref="70053673"/>
 							<reference ref="993056620"/>
+							<reference ref="376831697"/>
 						</array>
 						<reference key="parent" ref="766721923"/>
 					</object>
@@ -455,6 +491,11 @@
 						<reference key="object" ref="204177288"/>
 						<reference key="parent" ref="133173164"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">51</int>
+						<reference key="object" ref="376831697"/>
+						<reference key="parent" ref="133173164"/>
+					</object>
 				</array>
 			</object>
 			<dictionary class="NSMutableDictionary" key="flattenedProperties">
@@ -473,22 +514,108 @@
 				<string key="44.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="45.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="46.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<string key="51.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="9.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 			</dictionary>
 			<dictionary class="NSMutableDictionary" key="unlocalizedProperties"/>
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">50</int>
+			<int key="maxID">52</int>
 		</object>
-		<object class="IBClassDescriber" key="IBDocument.Classes"/>
+		<object class="IBClassDescriber" key="IBDocument.Classes">
+			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
+				<object class="IBPartialClassDescription">
+					<string key="className">ViewController</string>
+					<string key="superclassName">UIViewController</string>
+					<dictionary class="NSMutableDictionary" key="actions">
+						<string key="SpinButtonTouch:">id</string>
+						<string key="SpinButtonTouchDown:">id</string>
+						<string key="doneButtonTouched:">id</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="actionInfosByName">
+						<object class="IBActionInfo" key="SpinButtonTouch:">
+							<string key="name">SpinButtonTouch:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="SpinButtonTouchDown:">
+							<string key="name">SpinButtonTouchDown:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="doneButtonTouched:">
+							<string key="name">doneButtonTouched:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="outlets">
+						<string key="SpinButton">UIButton</string>
+						<string key="WheelImage">UIImageView</string>
+						<string key="answerBG">UIImageView</string>
+						<string key="answerLabel1">UILabel</string>
+						<string key="answerLabel2">UILabel</string>
+						<string key="answerLabel3">UILabel</string>
+						<string key="answerLabel4">UILabel</string>
+						<string key="questionLabel">UILabel</string>
+						<string key="questionView">UIView</string>
+						<string key="titleImage">UIImageView</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<object class="IBToOneOutletInfo" key="SpinButton">
+							<string key="name">SpinButton</string>
+							<string key="candidateClassName">UIButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="WheelImage">
+							<string key="name">WheelImage</string>
+							<string key="candidateClassName">UIImageView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="answerBG">
+							<string key="name">answerBG</string>
+							<string key="candidateClassName">UIImageView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="answerLabel1">
+							<string key="name">answerLabel1</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="answerLabel2">
+							<string key="name">answerLabel2</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="answerLabel3">
+							<string key="name">answerLabel3</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="answerLabel4">
+							<string key="name">answerLabel4</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="questionLabel">
+							<string key="name">questionLabel</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="questionView">
+							<string key="name">questionView</string>
+							<string key="candidateClassName">UIView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="titleImage">
+							<string key="name">titleImage</string>
+							<string key="candidateClassName">UIImageView</string>
+						</object>
+					</dictionary>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/ViewController.h</string>
+					</object>
+				</object>
+			</array>
+		</object>
 		<int key="IBDocument.localizationMode">0</int>
 		<string key="IBDocument.TargetRuntimeIdentifier">IBIPadFramework</string>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
+			<string key="CorrectAnswerBG@2x.png">{1418, 100}</string>
 			<string key="Mask@2x.png">{2048, 1536}</string>
-			<string key="QuestionBG@2x.png">{1659, 1139}</string>
+			<string key="QuestionBG@2x.png">{1632, 1139}</string>
 			<string key="SpinButton@2x.png">{411, 225}</string>
 			<string key="Wheel@2x.png">{1401, 1408}</string>
 		</dictionary>

@@ -23,5 +23,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *answerLabel2;
 @property (weak, nonatomic) IBOutlet UILabel *answerLabel3;
 @property (weak, nonatomic) IBOutlet UILabel *answerLabel4;
+@property (weak, nonatomic) IBOutlet UIImageView *answerBG;
 
 @end
